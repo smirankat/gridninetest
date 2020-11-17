@@ -18,10 +18,10 @@ const showMoreCards = () => {
 }
 
   useEffect(() => {
-    fetch("http://localhost:3000/db.json")
+    fetch("http://localhost:3001/flights")
       .then((resp) => resp.json())
       .then((json) => {
-        setFlights(json.flights);
+        setFlights(json);
       });
   }, []);
 
