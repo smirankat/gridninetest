@@ -11,3 +11,147 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+* {
+  padding: 0;
+  margin: 0;
+}
+.app {
+  position: relative;
+  max-width: 1280px;
+  margin: auto;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+.top {
+  width: 100%;
+  height: 10%;
+  background: #D8D8D8;
+}
+.bottom {
+  width: 100%;
+  height: 30%;
+  background: #D8D8D8;
+}
+label {
+  display: block;
+}
+.cards {
+  position: absolute;
+  right: 0;
+  width: 63%;
+  padding: 20px 30px;
+}
+.card {
+padding-bottom: 20px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background: #1286C4;
+  color: white;
+  padding: 5px 20px;
+}
+.price::first-line {
+  font-size: 22px;
+}
+.price {
+  text-align: right;
+}
+main {
+  font-size: 20px;
+}
+.itinerary {
+  padding: 0 30px;
+}
+.flight {
+padding: 10px 0 5px;
+}
+.flight span {
+  color: #5AA6CB;
+}
+.time {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.time span {
+  font-size: 18px;
+  color: #1EA1DA;
+}
+.stop {
+  font-size: 20px;
+  color: #FE9649;
+  padding: 0 25px;
+}
+.stop__text {
+  display: flex;
+  justify-content: space-between;
+}
+.hl {
+width: 40%;
+height: 1px;
+background: #A2A2A2;
+align-self: center;
+}
+.stop__line {
+  width: 100%;
+height: 1px;
+background: #A2A2A2;
+align-self: center;
+
+}
+.carrier {
+  font-size: 18px;
+  padding: 5px 0;
+}
+.hline {
+  width: 100%;
+height: 2px;
+background: #1283C0;
+}
+.card button {
+  display: block;
+  width: 100%;
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+  margin: 0;
+  text-decoration: none;
+  background:#FEB06F;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out,
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.card button:hover,
+.card button:focus {
+  background:#FE9D1E;
+}
+.card button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+.card button:active {
+  transform: scale(0.99);
+}
+
+.show-more {
+  display: block;
+  width: 160px;
+  line-height: 28px;
+  font-size: 18px;
+  margin: auto;
+  cursor: pointer;
+}
