@@ -18,7 +18,7 @@ const showMoreCards = () => {
 }
 
   useEffect(() => {
-    fetch("http://localhost:3001/flights")
+    fetch("/flights")
       .then((resp) => resp.json())
       .then((json) => {
         setFlights(json);
